@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="webtgbot.qs.processor" />
+        <module name="webtgbot.qs" />
+        <module name="photos" />
+        <module name="fp.web" />
+        <module name="webtgbot.qs.eureka" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="fp.web" target="11" />
+      <module name="photos" target="11" />
+      <module name="webtgbot.qs" target="11" />
+      <module name="webtgbot.qs.eureka" target="11" />
+      <module name="webtgbot.qs.processor" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="fp.web" options="-parameters" />
+      <module name="photos" options="-parameters" />
+      <module name="webtgbot.qs" options="-parameters" />
+      <module name="webtgbot.qs.eureka" options="-parameters" />
+      <module name="webtgbot.qs.processor" options="-parameters" />
+    </option>
+  </component>
+</project>

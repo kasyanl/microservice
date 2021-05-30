@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<th:block th:fragment="carousel">
+    <div class="carousel carousel-dark slide" data-bs-ride="carousel" id="carouselExampleDark">
+        <div class="carousel-indicators">
+            <button aria-current="true" aria-label="Slide 1" class="active" data-bs-slide-to="0"
+                    data-bs-target="#carouselExampleDark" type="button"></button>
+            <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleDark"
+                    type="button"></button>
+            <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleDark"
+                    type="button"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img alt="..." class="d-block w-100" src="https://images.wallpaperscraft.ru/image/kosmos_planety_vzlet_vzryv_96455_1920x1080.jpg">
+                <div class="carousel-caption d-none d-md-block  text-white">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img alt="..." class="d-block w-100" src="https://images.wallpaperscraft.ru/image/pluton_planeta_karlikovaya_planeta_transneptunovyj_obekt_novosti_97479_1920x1080.jpg">
+                <div class="carousel-caption d-none d-md-block  text-white">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img alt="..." class="d-block w-100" src="https://images.wallpaperscraft.ru/image/galaktika_svechenie_spiral_142698_1920x1080.jpg">
+                <div class="carousel-caption d-none d-md-block  text-white">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleDark" type="button">
+            <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleDark" type="button">
+            <span aria-hidden="true" class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</th:block>
+</html>

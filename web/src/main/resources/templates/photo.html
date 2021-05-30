@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:ht="http://www.thymeleaf.org" xmlns:th="http://www.thymeleaf.org">
+<th:block th:include="app :: head"/>
+<body>
+<th:block th:include="app :: nav"/>
+<main class="container">
+    <div class="row mb-2 mt-5 mb-5">
+        <th:block th:each="photo : ${photos}">
+        <th:block th:include="elem/card_horizontal :: card"
+                  th:with="primaryTitle=${photo.title},
+                           secondaryTitle=${'all my albums'},
+                           date=${'12 Dec'},
+                           mainText=${photo.url},
+                           imgThumbUri=${photo.thumbnailUrl},
+                           linkUri=${'/photo/'+photo.id},
+                           linkText=${'open ...'}
+                           "/>
+        </th:block>
+    </div>
+</main><!-- /.container -->
+<th:block th:include="app :: footer"/>
+</body>
+<ht:block th:include="app :: scripts"/>
+</html>

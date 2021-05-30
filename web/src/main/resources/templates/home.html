@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:ht="http://www.thymeleaf.org" xmlns:th="http://www.thymeleaf.org">
+<th:block th:include="app :: head"/>
+<body>
+<th:block th:include="app :: nav"/>
+<th:block th:include="elem/carousel :: carousel"/>
+
+<main class="container">
+    <div class="row mb-2 mt-5 mb-5">
+        <th:block th:include="elem/card_horizontal :: card"
+                  th:with="primaryTitle=${'Albums'},
+                           secondaryTitle=${'all my albums'},
+                           date=${'12 Dec'},
+                           mainText=${'This opens albums'},
+                           imgThumbUri=${'https://images-na.ssl-images-amazon.com/images/I/81nM9rgVFiL._AC_SX355_.jpg'},
+                           linkUri=${'/album'},
+                           linkText=${'open ...'}
+                           "/>
+        <th:block th:include="elem/card_horizontal :: card"
+                  th:with="primaryTitle=${'Photos'},
+                           secondaryTitle=${'all my photos'},
+                           date=${'12 Nov'},
+                           mainText=${'This opens photos'},
+                           imgThumbUri=${'https://images-na.ssl-images-amazon.com/images/I/81nM9rgVFiL._AC_SX355_.jpg'},
+                           linkUri=${'/photo'},
+                           linkText=${'open ...'}
+                           "/>
+    </div>
+</main><!-- /.container -->
+<th:block th:include="app :: footer"/>
+</body>
+<th:block th:include="app :: scripts"/>
+</html>
